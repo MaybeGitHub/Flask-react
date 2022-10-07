@@ -1,0 +1,15 @@
+
+
+
+
+.enlaces {
+  margin-left: 500PX;
+  display: contents;
+  padding-left: 6%;
+  font-weight: bold;
+  font-size: 38px;
+  color:rgba(6, 6, 6, 0.922);
+  margin: auto;
+  cursor: pointer;
+  user-select: none;
+  }

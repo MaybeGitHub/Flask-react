@@ -1,0 +1,22 @@
+.cuadro {
+    height: 60px;
+    /*em es una unidad relativa del tamaño del contenedor*/
+    font-size: 20px;
+    display: flex;
+    
+    flex: 1;
+    background-color: #666966;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: -1px 4px 1px 1px rgb(69, 66, 66);
+    border: 2px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .cuadro:hover {
+    background-color: #ebb000;
+  }

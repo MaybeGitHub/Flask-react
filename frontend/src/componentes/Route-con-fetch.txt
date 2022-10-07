@@ -1,0 +1,32 @@
+import React, {useState, useEffect} from "react"
+
+
+function Route () {
+  const [data, setData] = useState([{}])
+ 
+  useEffect(()=> {
+    fetch("/api").then(res => res.json()).then(
+      data => {
+      setData(data)
+      console.log(data);
+      }
+    )},[]
+
+  )
+
+  return (
+    <div>
+      {(typeof data.Loteria === "undefined") ? (
+        <p>Loading...</p>): (data.Loteria.map((Loteria, i) => (
+            <p key={i}>{Loteria}</p>
+          )
+        )
+      )
+    }
+    
+    </div>
+  );
+}
+
+  
+  export default Route

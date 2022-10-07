@@ -1,0 +1,21 @@
+.contenedor-boletos {
+  margin-left: 758px;
+  margin-top: -150px;
+  width: 400px;
+  height: 250px;
+  padding: 14px;
+  background-color: #dea2db;
+  border-radius: 20px;
+  border: 5px solid rgb(137, 22, 118);
+  text-align: center;
+  
+}
+
+.fila {
+  margin: 4px;
+  display: flex;
+  /*no incluimos flex wrap porque queremos que todos los elementos se muestren en una misma linea*/
+  align-items: center;
+  justify-content: center;
+
+}

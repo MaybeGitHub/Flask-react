@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, 
+body {
+  color: white;
+  background-color: #1b1b32;
+  font-family: Lato, sans-serif;
+  margin-top: 30px;
+}
+
+.titulo {
+  color: rgb(133, 26, 26);
+  font-size: 25px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.sorteos {
+  
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1b32;
+  color: white;
+  font-size: 50px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  margin: auto;
+  
+  
+}
+
