@@ -5,18 +5,23 @@ import '../estilos/Boton.css';
 import '../estilos/cuadro-resultado.css';
 import Boton from "../componentes/Boton";
 
-
-
 export default class Bonoloto extends React.Component {
 
-    state = {    
-        numeros_generados: []
+    state = { 
+        numeros: [],
+        complementario: []
     }
 
     generar_bonoloto = () => {
         axios.get("http://127.0.0.1:5000/bonoloto")
             .then(resultado => {
-                this.setState({ numeros_generados: resultado.data })
+
+                const new_state = { 
+                    numeros: resultado.data.numeros,
+                    complementario: resultado.data.complementario
+                };
+
+                this.setState(new_state);
             })
             .catch(error => console.log(error))
 
@@ -36,6 +41,9 @@ export default class Bonoloto extends React.Component {
                 
                 <div className="boton">
                     <Boton Apostar={this.generar_bonoloto}>Generar Apuesta</Boton>
+                </div>
+                <div className="cuadro">
+                    {this.state.numeros_generados.sort((a,b) => a - b).join(", ")}
                 </div>
                 <div className="cuadro">
                     {this.state.numeros_generados.sort((a,b) => a - b).join(", ")}
